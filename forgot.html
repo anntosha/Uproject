@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="Img/u.png" type="image/icon type">
+    <title>Ufield | Renewal</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="index.html" class="header__logo">
+                <img src="Img/Logo.png" alt="Ufield Logo" class="header__img" width="100">
+            </a>
+
+            <nav class="nav">
+                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="30"></button>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">log Out</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Dark/Light Mode</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="documentation.html">How To Use App</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="message.html">Create a Message</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="first-screen">
+                <h1 class="first-screen__caption">Please, answer the following questions:</h1>
+                <form class="first-screen__form">
+                    <label for="secret-question" class="sign-up__label">
+                        Question 1: Mother's maiden name?
+                    </label><br>
+                    <label for="secret-answer" class="sign-up__label">
+                        <input type="text" 
+                            name="secret-answer" 
+                            id="secret_answer" 
+                            value="" 
+                            maxlength="30"/>
+                    </label><br>
+
+                    <label for="secret-question" class="sign-up__label">
+                        Secret Question 2: Name of town where you were born?
+                    </label><br>
+                    <label for="secret-answer" class="sign-up__label">
+                        <input type="text" 
+                            name="secret-answer" 
+                            id="secret_answer" 
+                            value="" 
+                            maxlength="30"/>
+                    </label><br>
+
+                    <label for="secret-question" class="sign-up__label">
+                        Secret Question 3: Name of first pet?
+                    </label><br>
+                    <label for="secret-answer" class="sign-up__label">
+                        <input type="text" 
+                            name="secret-answer" 
+                            id="secret_answer" 
+                            value="" 
+                            maxlength="30"/>
+                    </label><br>
+                    <button class="first-screen__submit" type="submit">Sign in</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

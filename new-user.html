@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="Img/u.png" type="image/icon type">
+    <title>Ufield | New User Sign Up</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="index.html" class="header__logo">
+                <img src="Img/Logo.png" alt="Ufield Logo" class="header__img" width="100">
+            </a>
+
+            <nav class="nav">
+                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="30"></button>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">log Out</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Dark/Light Mode</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="documentation.html">How To Use App</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="message.html">Create a Message</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main main--second_screen">
+            <section class="sign-up">
+                <h1 class="sign-up__caption">Sign Up</h1>
+                <p class="sign-up__line">Please fill in this form to create an account:</p>
+                <form class="sign-up__form">
+                    <label class="sign-up__label" for="email">
+                        Enter email address
+                        <input type="email" class="sign-up__input" name="email" required>
+                    </label><br>
+
+                    <label class="sign-up__label" for="password">
+                        Enter password
+                        <input type="password" class="sign-up__input" name="password" required>
+                    </label><br>
+
+                    <label for="secret-question" class="sign-up__label">
+                        Secret Question:
+                        <select name="secret-question" id="secret-question"> 
+                            <option value="0">Mother's maiden name</option> 
+                            <option value="1">Name of town where you were born</option> 
+                            <option value="2">Name of first pet</option> 
+                        </select>
+                    </label><br>
+
+                    <label for="secret-answer" class="sign-up__label">
+                        <input type="text" 
+                            name="secret-answer" 
+                            id="secret_answer" 
+                            value="" 
+                            maxlength="30"/>
+                    </label><br>
+
+                    <button class="sign-up__submit" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

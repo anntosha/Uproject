@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="Img/u.png" type="image/icon type">
+    <title>Ufield</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="index.html" class="header__logo">
+                <img src="/Img/logo.png" alt="United Logo" class="header__image" width="100" height="30">
+            </a>
+
+            <nav class="nav">
+                <button class="nav__mode" type="button">Mode</button>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="first-screen">
+                <h1 class="first-screen__caption">Sign in here</h1>
+                <form class="first-screen__form">
+                    <label class="first-screen__label" for="email"><br>
+                        Email<br>
+                        <input type="email" class="first-screen__input" name="email" required>
+                        <a href="forgot.html" class="first-scdreen__link">
+                            Forgot Email?
+                        </a>
+                    </label>
+
+                    <label class="first-screen__label" for="password"><br>
+                        Password
+                        <input id="password" type="password" class="first-screen__input" name="password" required>
+                        <a href="forgot.html" class="first-scdreen__link">
+                            Forgot Password?
+                        </a>
+                    </label><br>
+                    <button class="first-screen__submit" type="submit">Sign in</button><br>
+
+                    <p>New User?</p>
+                    <a href="new-user.html" class="first-scdreen__link">Sign Up Here</a>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

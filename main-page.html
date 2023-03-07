@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="Img/u.png" type="image/icon type">
+    <title>Ufield | Main</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <nav class="nav">
+                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="30"></button>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">Dark/Light Mode</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="documentation.html">How To Use App</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="message.html">Create a Message</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">log Out</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="header__logo">
+                <img src="/Img/logo.png" alt="United Logo" class="header__image" width="100" height="30">
+            </a>
+
+            <div class="settings-bar">
+                <a href="settings.html"><img src="Img/settings.png" alt="Settings" width="30" title="Settings Page"></a>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main-page">
+                <div class="main-page__container">
+                    <h1 class="main-page visually-hidden">Checklist, Non-pin photo "Post" and Notepad</h1>
+                    <p class="main-page__user">Welcome</p>
+                    <p class="main-page__user-name"></p>
+
+                    <section class="notifications">
+                        <h3 class="notifications__caption">Notifications</h3>
+                        <ul class="notifications__list"></ul>
+                    </section>
+
+                    <section class="carousel">
+                        <h2 class="carousel__caption visually-hidden">Carousel</h2>
+
+                        <section class="checklist">
+                            <h3 class="checklist__caption">Walkthrough Checklist</h3>
+                            <div class="checklist__container">
+                                <p class="checklist__item">
+                                    <label for="kiosk" class="checklist__label">
+                                        <input type="checkbox" class="checklist__checkbox" id="kiosk" checked>
+                                        Kiosk
+                                    </label>
+                                </p>
+                                <p class="checklist__item">
+                                    <label for="belt" class="checklist__label">
+                                        <input type="checkbox" class="checklist__checkbox" id="belt">
+                                        Conveyor Belt
+                                    </label>
+                                </p>
+                                <p class="checklist__item">
+                                    <label for="lobby" class="checklist__label">
+                                        <input type="checkbox" class="checklist__checkbox" id="lobby">
+                                        Lobby
+                                    </label>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="non-pin">
+                            <h3 class="non-pin__caption">Non-pin Photo Post</h3>
+                            <form action="#" class="non-pin__form">
+                                <p class="non-pin__item">
+                                    <label for="1" class="non-pin__label">
+                                        Location
+                                        <input type="text" class="non-pin__input" id="1">
+                                    </label>
+                                </p>
+                                <p class="non-pin__item">
+                                    <label for="2" class="non-pin__label">
+                                        Airport
+                                        <input type="text" class="non-pin__input" id="2">
+                                    </label>
+                                </p>
+                                <p class="non-pin__item">
+                                    <label for="3" class="non-pin__label">
+                                        Position #
+                                        <input type="text" class="non-pin__input" id="3">
+                                    </label>
+                                </p>
+                                <p class="non-pin__item">
+                                    <label for="4" class="non-pin__label">
+                                        Comment
+                                        <input type="text" class="non-pin__input" id="4">
+                                    </label>
+                                </p>
+
+                                <a href="submit-page.html" class="non-pin__button">Camera</a>
+                            </form>
+                        </section>
+
+                        <section class="notepad">
+                            <h3 class="notepad__caption">Notepad</h3>
+                            <div class="notepad__container">
+                                <div class="notepad__tense">
+                                    <p class="notepad__date">20/20/2002</p>
+                                    <p class="notepad__time">16:30</p>
+                                </div>
+                                <p class="notepad__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas eius, blanditiis distinctio facere vitae obcaecati ea vel atque aut ipsum minus. Enim culpa ipsa ea eos praesentium sapiente cupiditate?</p> 
+                            </div>
+                        </section>
+                        
+                        <div class="carousel__buttons">
+                            <button type="button" class="carousel__button"><p>&larr;</p></button>
+                            <button type="button" class="carousel__button">&rarr;</button>
+                        </div>
+                    </section>
+
+                    <section class="state">
+                        <h2 class="state__caption">Equipment Condition</h2>
+                        <div class="state__cover">
+                            <div class="state__buttons">
+                                <p class="state__button state__button--green">
+                                    <a href="submit-page.html" class="state__link"></a>
+                                </p>
+                                <p class="state__button state__button--yellow">
+                                    <a href="submit-page.html" class="state__link"></a>
+                                </p>
+                                <p class="state__button state__button--red">
+                                    <a href="submit-page.html" class="state__link"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="emergency">
+                        <div class="emergency__submit">
+                            <a href="#">Emergency</a>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
