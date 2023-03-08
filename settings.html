@@ -11,17 +11,16 @@
 <body>
     <div class="page">
         <header class="header">
+            <a href="#" class="header__link"></a>
+
             <a href="index.html" class="header__logo">
                 <img src="Img/Logo.png" alt="Ufield Logo" class="header__img" width="100">
             </a>
 
             <nav class="nav">
-                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="30"></button>
+                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="27" height="25"></button>
 
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#">log Out</a>
-                    </li>
                     <li class="nav__item">
                         <a href="#">Dark/Light Mode</a>
                     </li>
@@ -31,13 +30,35 @@
                     <li class="nav__item">
                         <a href="message.html">Create a Message</a>
                     </li>
+                    <li class="nav__item">
+                        <a href="#">log Out</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main class="main">
             <section class="settings">
-                Settings Page
+                <h1 class="settings__caption">Settings Page</h1>
+                <div class="settings__text">
+                    <p class="settings__paragraph">
+                        <label for="font" class="settings__label">Change font-size:</label>
+                        <input type="range" class="settings__input">
+                    </p>
+                    <p class="settings__paragraph">
+                        <label for="language" class="settings__label">Change Language:</label>
+                        <select id="language" type="range" class="settings__select">
+                            <option value="0">English</option> 
+                            <option value="1">Spanish</option> 
+                            <option value="2">Ukrainian</option> 
+                        </select>
+                    </p>
+                    <p class="settings__paragraph"></p>
+                    <label for="not" class="settings__label">Turn on/off Notifications</label>
+                    <input type="checkbox" class="settings__input" checked>
+                </div>
+
+                <button class="settings__submit" type="submit">Save</button>
             </section>
         </main>
 

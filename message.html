@@ -11,6 +11,8 @@
 <body>
     <div class="page">
         <header class="header">
+            <a href="#" class="header__link"></a>
+
             <a href="index.html" class="header__logo">
                 <img src="Img/Logo.png" alt="Ufield Logo" class="header__img" width="100">
             </a>
@@ -20,9 +22,6 @@
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#">log Out</a>
-                    </li>
-                    <li class="nav__item">
                         <a href="#">Dark/Light Mode</a>
                     </li>
                     <li class="nav__item">
@@ -31,6 +30,9 @@
                     <li class="nav__item">
                         <a href="message.html">Create a Message</a>
                     </li>
+                    <li class="nav__item">
+                        <a href="#">log Out</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -38,6 +40,14 @@
         <main class="main">
             <section class="message">
                 <h1 class="message__caption">Message</h1>
+
+                <label class="message__label" for="message">Enter your message:</label>
+                <textarea class="message__textarea"  id="message" name="message" rows="20" cols="35">
+                </textarea>
+
+                <div class="message__cover">
+                    <button type="submit" class="message__submit">Send</button>
+                </div>
             </section>
         </main>
 

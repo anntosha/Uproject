@@ -11,17 +11,16 @@
 <body>
     <div class="page">
         <header class="header">
+            <a href="#" class="header__link"></a>
+
             <a href="index.html" class="header__logo">
                 <img src="Img/Logo.png" alt="Ufield Logo" class="header__img" width="100">
             </a>
 
             <nav class="nav">
-                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="30"></button>
+                <button class="nav__toggle"><img src="Img/menu.png" alt="Menu" width="27" height="25"></button>
 
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#">log Out</a>
-                    </li>
                     <li class="nav__item">
                         <a href="#">Dark/Light Mode</a>
                     </li>
@@ -30,6 +29,9 @@
                     </li>
                     <li class="nav__item">
                         <a href="message.html">Create a Message</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">log Out</a>
                     </li>
                 </ul>
             </nav>
@@ -40,32 +42,32 @@
                 <h1 class="sign-up__caption">Sign Up</h1>
                 <p class="sign-up__line">Please fill in this form to create an account:</p>
                 <form class="sign-up__form">
-                    <label class="sign-up__label" for="email">
+                    <label class="sign-up__label" for="email"></label>
                         Enter email address
-                        <input type="email" class="sign-up__input" name="email" required>
-                    </label><br>
+                    <input type="email" class="sign-up__input" name="email" required>
+                    <br>
 
-                    <label class="sign-up__label" for="password">
+                    <label class="sign-up__label" for="password"></label>
                         Enter password
-                        <input type="password" class="sign-up__input" name="password" required>
-                    </label><br>
+                    <input type="password" class="sign-up__input" name="password" required>
+                    <br>
 
-                    <label for="secret-question" class="sign-up__label">
-                        Secret Question:
-                        <select name="secret-question" id="secret-question"> 
-                            <option value="0">Mother's maiden name</option> 
-                            <option value="1">Name of town where you were born</option> 
-                            <option value="2">Name of first pet</option> 
-                        </select>
-                    </label><br>
+                    <label for="secret-question" class="sign-up__label"></label>
+                        Secret Question
+                    <select name="secret-question" id="secret-question"> 
+                        <option value="0">Mother's maiden name</option> 
+                        <option value="1">Name of town where you were born</option> 
+                        <option value="2">Name of first pet</option> 
+                    </select>
+                    <br>
 
-                    <label for="secret-answer" class="sign-up__label">
-                        <input type="text" 
-                            name="secret-answer" 
-                            id="secret_answer" 
-                            value="" 
-                            maxlength="30"/>
-                    </label><br>
+                    <label for="secret-answer" class="sign-up__label"></label>
+                    <input class="secret-answer__input" type="text" 
+                        name="secret-answer" 
+                        id="secret_answer" 
+                        value="" 
+                        maxlength="30"/>
+                    <br>
 
                     <button class="sign-up__submit" type="submit">Submit</button>
                 </form>
